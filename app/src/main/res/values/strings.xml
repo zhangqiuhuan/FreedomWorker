@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">今日达人</string>
+    <string name="banner_callback_failed">获取广告位数据失败</string>
+    <string name="menu_callback_failed">获取板块列表数据失败</string>
+    <string name="data_analysis_failed">数据解析失败</string>
+
+
+    <string name="tasksquare_callback_failed">获取任务广场列表数据失败</string>
+    <string name="broker_callback_failed">获取经纪人列表数据失败</string>
+    <string name="province_callback_failed">获取省份列表数据失败</string>
+    <string name="city_callback_failed">获取省份列表数据失败</string>
+    <string name="level_callback_failed">获取等级列表数据失败</string>
+
+    <string name="login_callback_failed">登录失败</string>
+    <string name="task_list_callback_failed">获取任务列表数据失败</string>
+</resources>

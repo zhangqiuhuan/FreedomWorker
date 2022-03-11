@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_task_search"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/ic_search" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginLeft="9dp"
+            android:textSize="14sp"
+            android:hint="请输入搜索的任务"/>
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tl_task"
+        android:layout_width="match_parent"
+        app:tabIndicatorColor="@color/maincolor"
+        app:tabIndicatorHeight="2dp"
+        app:tabSelectedTextColor="@color/maincolor"
+        app:tabTextAppearance="@style/TabLayoutTextStyle16"
+        app:tabTextColor="@color/defaultcolor"
+        app:tabIndicatorFullWidth="false"
+        android:layout_height="40dp" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_request_failed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/bg_request_failed"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_request_failed_back"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:paddingLeft="42dp"
+            android:paddingRight="41dp"
+            android:paddingBottom="9dp"
+            android:paddingTop="9dp"
+            android:text="返回首页"/>
+
+    </LinearLayout>
+</LinearLayout>

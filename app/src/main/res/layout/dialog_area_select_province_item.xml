@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_province"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view_highlight"
+            android:layout_width="3dp"
+            android:layout_height="10dp"
+            android:background="@color/maincolor"/>
+
+        <TextView
+            android:id="@+id/tv_provicename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="切换城市"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/maincolor"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
+

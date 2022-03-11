@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_tab"></FrameLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tl_navigationbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:tabIndicatorColor="@color/white"
+        app:tabIndicatorHeight="3dp"
+        app:tabSelectedTextColor="@color/maincolor"
+        app:tabTextAppearance="@style/TabLayoutTextStyle10"
+        app:tabTextColor="@color/black" />
+    <!--app:tabMode="fixed"-->
+
+    <RelativeLayout
+        android:id="@+id/rl_tab"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#00000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#00000000"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:alpha="0.6"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_home"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_home"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@mipmap/ic_home" />
+
+                    <TextView
+                        android:id="@+id/tv_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="首页"
+                        android:textColor="@color/maincolor"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_task"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_task"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@mipmap/ic_task_unfocus" />
+
+                    <TextView
+                        android:id="@+id/tv_task"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="任务"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_mine"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_mine"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@mipmap/ic_mine_unfocus" />
+
+                    <TextView
+                        android:id="@+id/tv_mine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="我的"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_custom_toast_bg">
+
+    <TextView
+        android:id="@+id/tv_custom_toast_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/maincolor"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        android:text="显示的文本"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/maincolor"/>
+
+    <TextView
+        android:id="@+id/tv_custom_toast_ok"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/maincolor"
+        android:text="确定"/>
+
+</LinearLayout>

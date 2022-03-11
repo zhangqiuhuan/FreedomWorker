@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_area_select"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="19dp">
+
+        <ImageView
+            android:id="@+id/iv_dialog_area_goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/ic_arrow_left"
+            android:scaleType="centerCrop" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="切换城市"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_button"
+        android:layout_below="@+id/rl_title"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_dialog_area_province"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"></androidx.recyclerview.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginBottom="30dp"
+            android:background="@color/grayF5">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_dialog_area_city"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="18dp"
+                android:background="@color/grayF5"></androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="24dp"
+        android:orientation="horizontal"
+        android:paddingTop="14dp"
+        android:paddingBottom="24dp">
+
+        <Button
+            android:id="@+id/btn_dialog_area_clear"
+            android:layout_width="110dp"
+            android:layout_height="46dp"
+            android:background="@drawable/btn_area_clear"
+            android:text="清除"
+            android:textColor="@color/defaultcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_dialog_area_confirm"
+            android:layout_width="207dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_area_confirm"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
+

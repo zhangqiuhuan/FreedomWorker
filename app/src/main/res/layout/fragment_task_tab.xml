@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_task_tab_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/smartrefresh_task"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlAccentColor="#00000000"
+            app:srlEnablePreviewInEditMode="true"
+            app:srlPrimaryColor="#00000000">
+
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:id="@+id/classicsheader_task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srlDrawableProgress="@drawable/ic_progress_puzzle" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_task_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"></androidx.recyclerview.widget.RecyclerView>
+
+            <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                android:id="@+id/classicsfooter_task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_task_tab_nothing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+       <include layout="@layout/include_data_nothing"/>
+
+    </LinearLayout>
+</LinearLayout>

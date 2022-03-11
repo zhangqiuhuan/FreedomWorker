@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hollow_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingTop="20dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="20dp">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/maincolor"
+            android:indeterminateTintMode="src_atop" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/maincolor"
+            android:text="扫描中..." />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/maincolor_hollow_bg"
+            android:textColor="@color/maincolor"
+            android:text="取消" />
+
+    </LinearLayout>
+</LinearLayout>
